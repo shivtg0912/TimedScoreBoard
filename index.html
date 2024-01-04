@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ScoreBoard</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <style>
+        .win {
+            color: green
+        }
+        .lose {
+            color: red
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="columns">
+            <div class="column is-half is-offset-one-quarter">
+                <div class="card mt-6">
+                    <header class="card-header">
+                      <p class="card-header-title">
+                        TIMED SCOREKEEPER                              
+                        <div class="timer" id="timer"></div>
+                      </p>
+                    </header>
+                    <div class="card-content">
+                      <div class="content">
+                        <h1 class="is-size-1"><span id="p1Disp">0</span> - <span id="p2Disp">0</span></h1>
+                      </div>
+                    </div>
+                    <footer class="card-footer">
+                        <button class="card-footer-item" id="p1Button">P1 +1</button>
+                        <button class="card-footer-item" id="p2Button">P2 +1</button>
+                        <button class="card-footer-item" id="reset">RESET</button>
+                        <select class="card-footer-item" name="" id="upto">
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                        </select>
+                    </footer>
+                  </div>
+            </div>
+
+        </div>
+    </div>
+    <script type="module" src="app.js"></script>
+</body>
+</html>

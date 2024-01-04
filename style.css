@@ -1,0 +1,12 @@
+.content {
+    text-align: center;
+}
+.card-header-title {
+    text-align: center;
+}
+.timer {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding-right: 5%;
+}
